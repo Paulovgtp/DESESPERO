@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel do Usuário</title>
+    <link rel="stylesheet" href="../css/painel.css">
+    <link rel="stylesheet" href="/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/plugins/fontawesome/css/all.min.css">
+</head>
+<body>
+<div class="flex-painel">
+    <sidebar>
+     <div class="sidebar-title">
+         <img src="/img/perfil.png" alt="perfil"><br>
+         <h2>Usuário</h2>
+     </div>
+     <div class="menu">
+         <ul>
+             <li>
+                <i class="fas fa-edit"></i>
+                <a href="painel.html">  Editar conta</a>
+               
+             </li>
+             <li>
+                <i class="fas fa-database"></i>
+                <a href="dados.html">  Consultar dados</a>
+            </li>
+            <li>
+                <i class="fas fa-key"></i> 
+                <a href="alterar.html"> Alterar senha</a>
+            </li>
+            <li>
+                <i class="fas fa-trash-alt"></i>
+                <a href="excluir.html">  Excluir conta</a>
+            </li>
+         </ul>
+     </div>
+    </sidebar>
+     <main>
+       <header>
+        <a href="painel.html"> <i class="fas fa-home"></i> Inicio</a>
+        <a href="#"> <i class="fas fa-sign-out-alt"></i> Sair</a>
+       </header>  
+       <div class="main-content">
+           <div class="panel">
+            <form action="#" method="post">
+                <fieldset>
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" style="width: 10em" value="">
+                        </div>
+                        <div class="campo">
+                            <label for="snome">Sobrenome</label>
+                            <input type="text" id="snome" name="snome" style="width: 10em" value="">
+                        </div>
+                    </fieldset>
+                    <div class="campo">
+                        <label>Sexo</label>
+                        <label>
+                            <input type="radio" name="sexo" value="masculino"> Masculino
+                        </label>
+                        <label>
+                            <input type="radio" name="sexo" value="feminino"> Feminino
+                        </label>
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" name="email" style="width: 20em" value="">
+                    </div>
+                    <div class="campo">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" name="telefone" style="width: 10em" value="">
+                    </div>
+            
+                    <fieldset class="grupo">
+                        <div class="campo">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" name="cidade" style="width: 10em" value="">
+                        </div>
+                        <div class="campo">
+                            <label for="estado">Estado</label>
+                            <select name="estado" id="estado">
+                                <option value="">--</option>
+                                <option value="PR">RO</option>
+                                <option value="PR">AC</option>
+                                <option value="PR">AM</option>
+                                <option value="PR">RR</option>
+                                <option value="PR">PA</option>
+                                <option value="PR">AP</option>
+                                <option value="PR">TO</option>
+                                <option value="PR">MA</option>
+                                <option value="PR">PI</option>
+                                <option value="PR">CE</option>
+                                <option value="PR">RN</option>
+                                <option value="PR">PB</option>
+                                <option value="PR">PE</option>
+                                <option value="PR">AL</option>
+                                <option value="PR">SE</option>
+                                <option value="PR">BA</option>
+                                <option value="PR">MG</option>
+                                <option value="PR">ES</option>
+                                <option value="PR">RJ</option>
+                                <option value="PR">SP</option>
+                                <option value="PR">PR</option>
+                                <option value="PR">SC</option>
+                                <option value="PR">RS</option>
+                                <option value="PR">MS</option>
+                                <option value="PR">MT</option>
+                                <option value="PR">DF</option>
+                            </select>
+                        </div>
+                    </fieldset>
+            
+                    <div class="campo">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea rows="6" style="width: 20em" id="mensagem" name="mensagem"></textarea>
+                    </div>
+            
+                    <div class="campo">
+                        <label>Newsletter</label>
+                        <label>
+                            <input type="checkbox" name="newsletter" value="1"> Gostaria de receber a Newsletter da empresa
+                        </label>
+                    </div>
+            
+                    <button type="submit" name="submit">Enviar</button>
+                </fieldset>
+            </form>
+           </div>
+       </div>
+     </main>
+</div>
+    
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="/plugins/fontawesome/js/all.min.js"></script>
+
+</body>
+
+</html>
