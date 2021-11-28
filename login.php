@@ -10,17 +10,17 @@
     <link href="css/style.css"  rel="stylesheet">
     <script src="js/login.js"></script>
     <!-- Facebook Pixel Code -->
-<script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1949876838513375');
-    fbq('track', 'PageView');
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1949876838513375');
+        fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1949876838513375&ev=PageView&noscript=1"
@@ -47,18 +47,17 @@
         </div>
     </div>
     </form>
-    <p class="text-center text-danger">
+    <p class="text-center text-danger" style="color: #fff;">
         <?php if (isset($_SESSION['loginErro'])){
             echo $_SESSION['loginErro'];
             unset($_SESSION['loginErro']);
         }?>
+    </p>
     <footer>
         <div id="footer"><img src="img/Vector.svg" alt=""></div>
         <div id="footer"><img src="img/Vector2.svg" alt=""></div>
         <div id="textfooter">Todos os direitos reservados - Erro 404</div>
     </footer>
-    
-
 </body>
 
 </html>
